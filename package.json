@@ -1,0 +1,15 @@
+{
+  "name": "trendingpackage",
+  "version": "1.0.0",
+  "description": "Created to keep track of what the general American population is interested at any given moment.",
+  "main": "trending.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node trending.js"
+  },
+  "keywords": [
+    "trending"
+  ],
+  "author": "yorranshellwattson",
+  "license": "ISC"
+}

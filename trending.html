@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta />
+    <title>Trending Today in the United States</title>
+    <link rel="stylesheet" type="text/css" href="public/trending.css"/>
+  </head>
+
+  <body>
+
+    <!-- Todo -->
+    <!-- Switch to Vue or React when you are ready -->
+    <!-- Add validation for security-->
+    <!-- /comments/:id/addNewComment -->
+    <!-- action and method can't start as null when you are on a server. But they can start as null if you are using basic html and js -->
+
+    <div class="box pinkBox">
+      <h1>Google Currently Trending in the United States </h1>
+      <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2431_RC04/embed_loader.js"></script>
+      <script type="text/javascript"> trends.embed.renderWidget("dailytrends", "", {"geo":"US","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+    </div>
+
+    <div class="box blueBox">
+      <h1>Trending on Popular Sites</h1>
+      <ul class="list">
+        <a href="https://www.youtube.com/feed/trending"><li>Trending on Youtube</li></a>
+        <a href="https://www.amazon.com/best-sellers-books-Amazon/zgbs/books/ref=zg_bs_books_home_all?pf_rd_p=c37c53ab-de39-45c8-93ea-0bdb20185583&pf_rd_s=center-5&pf_rd_t=2101&pf_rd_i=home&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=G2JA9QC2V0KNCP2VE971&pf_rd_r=G2JA9QC2V0KNCP2VE971&pf_rd_p=c37c53ab-de39-45c8-93ea-0bdb20185583"><li>Books on Amazon</li></a>
+        <a href="https://www.amazon.com/best-sellers-movies-TV-DVD-Blu-ray/zgbs/movies-tv/ref=zg_bs_nav_0"><li>Movies & TV on Amazon</li></a>
+        <a href="https://www.alexa.com/topsites/countries/US"><li>Alexa Top Sites in the US</li></a>
+        <a href="https://www.imdb.com/what-to-watch/fan-favorites/?ref_=hm_fanfav_sm"><li>More Fan Favorite TV/Movies</li></a>
+      </ul>
+      <p> You can always add more relevant sources later. But, these give a pretty good general gist. </p>
+    </div>
+
+    <div id="commentsSection" class="commentsSection" Section="commentsSection">
+      <h1>Comments/Notes Section</h1>
+
+        <!-- action="" method="" Ignoring the server setup for forms for now -->
+        <!-- Ignoring extensive form validation and security for now -->
+        <form id="userInputForm" name="userInputForm" onsubmit="validateForm(); return false;" >
+          <label for ="userText" style="color:purple;">New Comment</label><br/>
+          <input type="text" placeholder="Type your message..." id="userText" name="userText"/>
+          <input type="submit" value="Submit" id="submitUserAction" name="submitUserAction"/>
+        </form>
+
+
+        <div class="comment">
+          <h3 class="commentTitle">Date: 1/1/1000 &emsp;&emsp;&emsp;&emsp; User:SlingyWingy900</h3>
+          <p class="commentText">
+            N/A
+          </p>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="public/functionality.js"></script>
+
+
+  </body>
+</html>

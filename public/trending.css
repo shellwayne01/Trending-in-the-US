@@ -1,0 +1,105 @@
+body{
+  background-image: url(https://treeis245.weebly.com/uploads/1/2/4/8/124869648/733552328.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.box {
+  width: 70%;
+  margin: auto;
+  min-height: 100px;
+  height: auto;
+  text-align: center;
+  padding:5%;
+  box-sizing: border-box;
+  margin-bottom: 2%;
+  display: block;
+
+}
+
+.pinkBox {
+  background-color: hotpink;
+  padding:0% 5% 5% 5%;
+}
+
+.pinkBox h1,h2,h3{
+  color: snow;
+  padding-top: 1em;
+}
+
+.blueBox {
+  background-color: lightblue;
+  padding:0% 5% 5% 5%;
+}
+
+
+.blueBox h1,h2,h3{
+  color: snow;
+  padding-top: 1em;
+}
+
+
+.list{
+  list-style: none;
+  list-style-type: none;
+  list-style-position: inside;
+  font-size: 14pt;
+}
+
+.list a{
+  text-decoration:none;
+  text-decoration-color: none
+}
+
+.list a:visited{
+  text-decoration: none;
+  text-decoration-color: none;
+}
+
+.list a:hover li{
+  color: snow;
+}
+
+.list li{
+  color: black;
+  padding: 1%;
+}
+
+.comment{
+  width:100%;
+  min-height: 10em;
+  border-left: 1px solid #CD2181;
+  border-top: 1px dashed #CD2181;
+  border-right: 1px solid #CD2181;
+  padding-left: 2%;
+}
+
+.commentsSection{
+  width:90%;
+  margin:auto;
+  background-color: hotpink;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 3px 3px #F378CC , -.3em 0 .9em purple;
+  padding-left:5%;
+  padding-right:5%;
+}
+
+.commentsSection h1,h2,h3{
+  color: snow;
+  padding-top: 1em;
+}
+
+.commentTitle{
+  /* color: #CD2181; */
+  color:snow;
+}
+
+#userInputForm{
+  padding-left: 2%;  /* keep the same as comment padding */
+}
+
+#userText{
+  width:20%;
+  height: 3em;
+}
